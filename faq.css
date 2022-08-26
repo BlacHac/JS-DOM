@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url('https://cdn.pixabay.com/photo/2016/11/30/12/16/question-mark-1872665__480.jpg')
+    no-repeat center center /cover;
+    height: 100vh;
+}
+
+.title{
+    font-size: 2.2rem;
+    margin: 50px auto;
+    text-align: center;
+    color: yellow;
+    background-color: black;
+    width: fit-content;
+    padding: 15px 25px;
+    border-radius: 0 15px;
+    box-shadow: 0 3px 5px 3px yellow;
+}
+
+.container{
+    width: 50vw;
+    margin-left: 25vw;
+    color: white;
+    font-weight: bold;
+    background-color: rgba(128, 128, 128, 0.603);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px 0px gray;
+}
+
+.questionCard{
+    background-color: rgba(27, 27, 20, 0.692);
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 5px; 
+}
+
+.question{
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.5s;
+}
+
+.questionCard:hover{
+    cursor: pointer;
+    transform: scale(1.01);
+}
+
+.symbol{
+    margin-right: 10px;
+}
+
+.answer{
+    display: none;
+    color: yellow;
+    margin-top: 10px;
+    padding: 5px;
+    transition: 0.5s;
+    animation: dropDown 0.5s ease-in-out;
+    font-size: 1.1rem;
+}
+
+@keyframes dropDown {
+    from{
+        top: 10%;
+        opacity: 0;
+    }
+    to{
+        top: 50%;
+        opacity: 1;
+    }
+}
